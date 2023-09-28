@@ -71,11 +71,9 @@ body {
 }
 
 .hero {
-  background-image: url('../img/bank-tree.jpeg');
+  background: url('../img/bank-tree-min.webp') center/cover no-repeat;
   background-position: 0 -50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 300px;
+  height: 400px;
   position: relative;
 }
 
@@ -102,13 +100,13 @@ body {
 
 @media (min-width: 920px) {
   .hero {
-    height: 400px;
+    height: 600px;
     background-position: 0% 33%;
   }
 
   .hero-content {
     position: absolute;
-    top: 50px;
+    top: -20px;
     right: 50px;
     width: 300px;
     margin: 2rem;
@@ -287,5 +285,33 @@ body {
 
   .transaction-button {
     width: 200px;
+  }
+}
+.loading-screen{
+  height: 100vh;
+  background-color: #12002b;
+  position: relative;
+}
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: #fff 5px solid;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border-top-color: #42b983;
+  animation: loader 1s infinite ease-in-out;
+}
+@keyframes loader {
+  0%{
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  50%{
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(-720deg);
   }
 }

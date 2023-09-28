@@ -1,5 +1,5 @@
-import HeaderHome from "../components/HeaderHome";
-import Services from "../components/Services";
+import HeaderHome from "./HeaderHome";
+import Services from "./Services";
 
 const MainHome = () => {
   return (
